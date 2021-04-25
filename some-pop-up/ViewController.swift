@@ -15,10 +15,12 @@ class ViewController: UIViewController {
 
     @IBAction func sideMenuDidTapped(_ sender: UIButton) {
         print("sideMenuDidTapped")
+        SideMenuViewController.show(on: self)
     }
     
     @IBAction func bottomSheetDidTapped(_ sender: UIButton) {
         print("bottomSheetDidTapped")
+        BottomSheetViewController.show(on: self)
     }
     
     @IBAction func popUpDidTapped(_ sender: UIButton) {
