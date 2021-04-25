@@ -20,32 +20,68 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0H4-7t-1Ur">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="197"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="93.5"/>
                                         <state key="normal" title="Side Menu"/>
                                         <connections>
                                             <action selector="sideMenuDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ws2-N5-vsP"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZiE-cY-BHd">
-                                        <rect key="frame" x="0.0" y="207" width="414" height="197"/>
+                                        <rect key="frame" x="0.0" y="103.5" width="414" height="93.5"/>
                                         <state key="normal" title="Bottom Sheet"/>
                                         <connections>
                                             <action selector="bottomSheetDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ops-0d-0ch"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5L-Jd-8e9">
-                                        <rect key="frame" x="0.0" y="414" width="414" height="197"/>
+                                        <rect key="frame" x="0.0" y="207" width="414" height="93.5"/>
                                         <state key="normal" title="Pop Up"/>
                                         <connections>
                                             <action selector="popUpDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cs8-pR-JCF"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UbF-1P-AzQ">
-                                        <rect key="frame" x="0.0" y="621" width="414" height="197"/>
+                                        <rect key="frame" x="0.0" y="310.5" width="414" height="93.5"/>
                                         <state key="normal" title="Arrow Pop"/>
                                         <connections>
                                             <action selector="arrowPopDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kq8-Pu-0Qd"/>
                                             <action selector="popUpDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IIh-BO-ez8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ha-Eq-iFw">
+                                        <rect key="frame" x="0.0" y="414" width="414" height="93.5"/>
+                                        <state key="normal" title="Alert"/>
+                                        <connections>
+                                            <action selector="alertDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YJW-T9-7rG"/>
+                                            <action selector="arrowPopDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qek-iW-elz"/>
+                                            <action selector="popUpDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="stW-Am-aaW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQV-iR-VWo">
+                                        <rect key="frame" x="0.0" y="517.5" width="414" height="93.5"/>
+                                        <state key="normal" title="Custom Alert"/>
+                                        <connections>
+                                            <action selector="arrowPopDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h0B-so-yiD"/>
+                                            <action selector="customAlertDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rnf-DQ-Emu"/>
+                                            <action selector="popUpDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Im1-GD-4T1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUK-wR-j0a">
+                                        <rect key="frame" x="0.0" y="621" width="414" height="93.5"/>
+                                        <state key="normal" title="ActionSheet"/>
+                                        <connections>
+                                            <action selector="actionSheetDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SfN-Ya-qWc"/>
+                                            <action selector="arrowPopDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7pC-o7-I3S"/>
+                                            <action selector="popUpDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tjF-5A-MVD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfn-cK-myg">
+                                        <rect key="frame" x="0.0" y="724.5" width="414" height="93.5"/>
+                                        <state key="normal" title="Custom ActionSheet"/>
+                                        <connections>
+                                            <action selector="arrowPopDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XKB-eg-VOn"/>
+                                            <action selector="customActionSheetDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X7U-GL-euH"/>
+                                            <action selector="popUpDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r0w-Rn-2gn"/>
                                         </connections>
                                     </button>
                                 </subviews>
