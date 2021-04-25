@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="some_pop_up" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="txP-MB-qtm">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0H4-7t-1Ur">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="197"/>
+                                        <state key="normal" title="Side Menu"/>
+                                        <connections>
+                                            <action selector="sideMenuDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ws2-N5-vsP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZiE-cY-BHd">
+                                        <rect key="frame" x="0.0" y="207" width="414" height="197"/>
+                                        <state key="normal" title="Bottom Sheet"/>
+                                        <connections>
+                                            <action selector="bottomSheetDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ops-0d-0ch"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5L-Jd-8e9">
+                                        <rect key="frame" x="0.0" y="414" width="414" height="197"/>
+                                        <state key="normal" title="Pop Up"/>
+                                        <connections>
+                                            <action selector="popUpDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cs8-pR-JCF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UbF-1P-AzQ">
+                                        <rect key="frame" x="0.0" y="621" width="414" height="197"/>
+                                        <state key="normal" title="Arrow Pop"/>
+                                        <connections>
+                                            <action selector="arrowPopDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kq8-Pu-0Qd"/>
+                                            <action selector="popUpDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IIh-BO-ez8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="d5L-Jd-8e9" firstAttribute="centerX" secondItem="txP-MB-qtm" secondAttribute="centerX" id="SND-C9-AsE"/>
+                                    <constraint firstItem="0H4-7t-1Ur" firstAttribute="centerX" secondItem="txP-MB-qtm" secondAttribute="centerX" id="SUo-C1-85Z"/>
+                                    <constraint firstItem="ZiE-cY-BHd" firstAttribute="centerX" secondItem="txP-MB-qtm" secondAttribute="centerX" id="ao8-ck-GGa"/>
+                                    <constraint firstItem="UbF-1P-AzQ" firstAttribute="centerX" secondItem="txP-MB-qtm" secondAttribute="centerX" id="iTU-m9-5lJ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="txP-MB-qtm" secondAttribute="bottom" id="7i1-uu-Axu"/>
+                            <constraint firstItem="txP-MB-qtm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="FWE-Ub-lfS"/>
+                            <constraint firstItem="txP-MB-qtm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="sEO-hL-mJe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="txP-MB-qtm" secondAttribute="trailing" id="u10-8F-wNH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="81" y="89"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
