@@ -28,12 +28,34 @@ class ViewController: UIViewController {
     // Pop Up をタップした時の操作
     @IBAction func popUpDidTapped(_ sender: UIButton) {
         print("popUpDidTapped")
+        PopUpViewController.show(on: self)
     }
     
     // Arrow Pop をタップした時の操作
     @IBAction func arrowPopDidTapped(_ sender: UIButton) {
         print("arrowPopDidTapped")
+        // 自作Storyboardがある場合
+        let storyboard = UIStoryboard(name: "ArrowPop", bundle: nil)
+        let vc = storyboard.instantiateViewController(identifier: "ArrowPop") as! ArrowPopViewController
+        /* ない場合は初期化でOK
+        let vc = ArrowPopViewController()
+        */
+        // モーダル表示スタイルをポップオーバーに指定
+        vc.modalPresentationStyle = .popover
+        // 内容のサイズを指定
+        vc.preferredContentSize = CGSize(width: 200, height: 100)
+        // アンカービューを指定
+        vc.popoverPresentationController?.sourceView = sender
+        // アンカー領域を指定
+        vc.popoverPresentationController?.sourceRect = CGRect(origin: CGPoint.zero, size: sender.bounds.size)
+        // 矢印の方向を指定
+        vc.popoverPresentationController?.permittedArrowDirections = .any
+        // デリゲートを設定
+        vc.popoverPresentationController?.delegate = self
+        // 吹き出しを表示
+        present(vc, animated: true, completion: nil)
     }
+    
     // Alert をタップした時の操作
     @IBAction func alertDidTapped(_ sender: UIButton) {
         print("alertDidTapped")
@@ -81,3 +103,15 @@ class ViewController: UIViewController {
     }
 }
 
+// ArrowPopのためのextension
+extension ViewController: UIPopoverPresentationControllerDelegate {
+    // デフォルトの代わりにnoneを返すことで、iPhoneでもpopover表示ができるように
+    func adaptivePresentationStyle(for controller: UIPresentationController, traitCollection: UITraitCollection) -> UIModalPresentationStyle {
+        return .none
+    }
+
+    // ArrowPopの外をタップしたら閉じるべきかどうかを指定できる（吹き出し内のボタンで閉じたい場合に利用）
+    func popoverPresentationControllerShouldDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) -> Bool {
+        return true
+    }
+}

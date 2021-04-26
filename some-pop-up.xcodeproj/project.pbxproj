@@ -17,6 +17,10 @@
 		19097D8D263535DF0047A252 /* SideMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19097D8C263535DF0047A252 /* SideMenu.storyboard */; };
 		19097D91263537680047A252 /* BottomSheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19097D90263537680047A252 /* BottomSheet.storyboard */; };
 		19097D94263537730047A252 /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19097D93263537730047A252 /* BottomSheetViewController.swift */; };
+		19097D9726354B690047A252 /* PopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19097D9626354B690047A252 /* PopUp.storyboard */; };
+		19097D9A26354B740047A252 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19097D9926354B740047A252 /* PopUpViewController.swift */; };
+		19097D9D2636B6690047A252 /* ArrowPopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19097D9C2636B6690047A252 /* ArrowPopViewController.swift */; };
+		19097DA02636C1FF0047A252 /* ArrowPop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19097D9F2636C1FF0047A252 /* ArrowPop.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		19097D8C263535DF0047A252 /* SideMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SideMenu.storyboard; sourceTree = "<group>"; };
 		19097D90263537680047A252 /* BottomSheet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BottomSheet.storyboard; sourceTree = "<group>"; };
 		19097D93263537730047A252 /* BottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
+		19097D9626354B690047A252 /* PopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopUp.storyboard; sourceTree = "<group>"; };
+		19097D9926354B740047A252 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		19097D9C2636B6690047A252 /* ArrowPopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowPopViewController.swift; sourceTree = "<group>"; };
+		19097D9F2636C1FF0047A252 /* ArrowPop.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ArrowPop.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +83,10 @@
 				19097D88263535940047A252 /* SideMenuViewController.swift */,
 				19097D90263537680047A252 /* BottomSheet.storyboard */,
 				19097D93263537730047A252 /* BottomSheetViewController.swift */,
+				19097D9626354B690047A252 /* PopUp.storyboard */,
+				19097D9926354B740047A252 /* PopUpViewController.swift */,
+				19097D9F2636C1FF0047A252 /* ArrowPop.storyboard */,
+				19097D9C2636B6690047A252 /* ArrowPopViewController.swift */,
 			);
 			path = "some-pop-up";
 			sourceTree = "<group>";
@@ -139,8 +151,10 @@
 				19097D8D263535DF0047A252 /* SideMenu.storyboard in Resources */,
 				19097D7F2632B38B0047A252 /* LaunchScreen.storyboard in Resources */,
 				19097D91263537680047A252 /* BottomSheet.storyboard in Resources */,
+				19097DA02636C1FF0047A252 /* ArrowPop.storyboard in Resources */,
 				19097D7C2632B38B0047A252 /* Assets.xcassets in Resources */,
 				19097D7A2632B3850047A252 /* Main.storyboard in Resources */,
+				19097D9726354B690047A252 /* PopUp.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +166,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				19097D89263535940047A252 /* SideMenuViewController.swift in Sources */,
+				19097D9D2636B6690047A252 /* ArrowPopViewController.swift in Sources */,
+				19097D9A26354B740047A252 /* PopUpViewController.swift in Sources */,
 				19097D772632B3850047A252 /* ViewController.swift in Sources */,
 				19097D732632B3850047A252 /* AppDelegate.swift in Sources */,
 				19097D94263537730047A252 /* BottomSheetViewController.swift in Sources */,
