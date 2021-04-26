@@ -71,11 +71,6 @@ class ViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
-    // Custom Alert をタップした時の操作
-    @IBAction func customAlertDidTapped(_ sender: UIButton) {
-        print("customAlertDidTapped")
-    }
-    
     // ActionSheet をタップした時の操作
     @IBAction func actionSheetDidTapped(_ sender: UIButton) {
         print("actionSheetDidTapped")
@@ -95,11 +90,6 @@ class ViewController: UIViewController {
         actionSheet.addAction(cancel)
         actionSheet.addAction(delete)
         self.present(actionSheet, animated: true, completion: nil)
-    }
-    
-    // Custom ActionSheet をタップした時の操作
-    @IBAction func customActionSheetDidTapped(_ sender: UIButton) {
-        print("customActionSheetDidTapped")
     }
 }
 
