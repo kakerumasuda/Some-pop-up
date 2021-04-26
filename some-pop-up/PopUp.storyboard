@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pop Up View Controller-->
+        <scene sceneID="jdo-iJ-eOp">
+            <objects>
+                <viewController storyboardIdentifier="PopUp" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lld-En-iL1" customClass="PopUpViewController" customModule="some_pop_up" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8cr-06-hLj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NpG-Zf-BZB" customClass="UIImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JAJ-z5-LcO">
+                                <rect key="frame" x="41.5" y="179" width="331" height="538"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="eYN-QH-jRQ">
+                                        <rect key="frame" x="20" y="22" width="25" height="20.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="C91-Fy-R5U"/>
+                                            <constraint firstAttribute="width" constant="25" id="QtU-Qr-24w"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.88500458250000003" blue="0.5753966157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="eYN-QH-jRQ" firstAttribute="top" secondItem="JAJ-z5-LcO" secondAttribute="top" constant="20" id="3NG-Wi-HBk"/>
+                                    <constraint firstItem="eYN-QH-jRQ" firstAttribute="leading" secondItem="JAJ-z5-LcO" secondAttribute="leading" constant="20" id="ExC-pM-wCd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1GL-1w-D8f"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="NpG-Zf-BZB" secondAttribute="trailing" id="0XH-Ah-9sT"/>
+                            <constraint firstItem="NpG-Zf-BZB" firstAttribute="top" secondItem="8cr-06-hLj" secondAttribute="top" id="33j-XR-96O"/>
+                            <constraint firstItem="JAJ-z5-LcO" firstAttribute="centerX" secondItem="8cr-06-hLj" secondAttribute="centerX" id="KHS-uP-OQ9"/>
+                            <constraint firstItem="JAJ-z5-LcO" firstAttribute="height" secondItem="8cr-06-hLj" secondAttribute="height" multiplier="0.6" id="OhC-om-AIs"/>
+                            <constraint firstItem="JAJ-z5-LcO" firstAttribute="width" secondItem="8cr-06-hLj" secondAttribute="width" multiplier="0.8" id="aD7-fa-HOH"/>
+                            <constraint firstAttribute="bottom" secondItem="NpG-Zf-BZB" secondAttribute="bottom" id="bxL-Cq-OiW"/>
+                            <constraint firstItem="NpG-Zf-BZB" firstAttribute="leading" secondItem="8cr-06-hLj" secondAttribute="leading" id="vAi-IS-pMT"/>
+                            <constraint firstItem="JAJ-z5-LcO" firstAttribute="centerY" secondItem="8cr-06-hLj" secondAttribute="centerY" id="wtO-3Y-Y4x"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="PopUpView" destination="JAJ-z5-LcO" id="Whu-yH-u7h"/>
+                        <outlet property="cancelImageView" destination="eYN-QH-jRQ" id="04O-7q-gAR"/>
+                        <outlet property="overlayView" destination="NpG-Zf-BZB" id="lQg-FC-nth"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cXq-6c-bk3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="66"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+    </resources>
+</document>

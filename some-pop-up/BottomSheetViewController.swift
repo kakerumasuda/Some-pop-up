@@ -97,7 +97,6 @@ class BottomSheetViewController: UIViewController {
                     // 閉じた割合だけoverlayを明るくする
                     let height = bottomSheetView.frame.height
                     let closeRate = (height - translation.y) / height
-                    print(translation.y, bottomSheetView.frame.height, closeRate)
                     overlayView.alpha = 0.4 * closeRate
                     
                 } else if abs(translation.y) < 5 && abs(translation.x) > 5 {
